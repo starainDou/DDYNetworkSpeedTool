@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A481C7C620FD7E470052691B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A481C7BF20FD7E470052691B /* AppDelegate.m */; };
+		A481C7C720FD7E470052691B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A481C7C020FD7E470052691B /* LaunchScreen.storyboard */; };
+		A481C7C820FD7E470052691B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A481C7C220FD7E470052691B /* Info.plist */; };
+		A481C7C920FD7E470052691B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A481C7C320FD7E470052691B /* main.m */; };
+		A481C7CA20FD7E470052691B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A481C7C520FD7E470052691B /* ViewController.m */; };
+		A481C7CE20FD7F530052691B /* DDYNetworkSpeedTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A481C7CD20FD7F530052691B /* DDYNetworkSpeedTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A481C7A720FD7E060052691B /* DDYNetworkSpeedTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDYNetworkSpeedTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A481C7BE20FD7E470052691B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A481C7BF20FD7E470052691B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A481C7C120FD7E470052691B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A481C7C220FD7E470052691B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A481C7C320FD7E470052691B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A481C7C420FD7E470052691B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A481C7C520FD7E470052691B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A481C7CC20FD7F530052691B /* DDYNetworkSpeedTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYNetworkSpeedTool.h; sourceTree = "<group>"; };
+		A481C7CD20FD7F530052691B /* DDYNetworkSpeedTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYNetworkSpeedTool.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A481C7A420FD7E060052691B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A481C79E20FD7E060052691B = {
+			isa = PBXGroup;
+			children = (
+				A481C7A920FD7E060052691B /* DDYNetworkSpeedTool */,
+				A481C7A820FD7E060052691B /* Products */,
+				A481C7DE20FDA66B0052691B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A481C7A820FD7E060052691B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A481C7A720FD7E060052691B /* DDYNetworkSpeedTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A481C7A920FD7E060052691B /* DDYNetworkSpeedTool */ = {
+			isa = PBXGroup;
+			children = (
+				A481C7CB20FD7F030052691B /* DDYNetworkSpeedTool */,
+				A481C7BD20FD7E470052691B /* System */,
+			);
+			path = DDYNetworkSpeedTool;
+			sourceTree = "<group>";
+		};
+		A481C7BD20FD7E470052691B /* System */ = {
+			isa = PBXGroup;
+			children = (
+				A481C7BE20FD7E470052691B /* AppDelegate.h */,
+				A481C7BF20FD7E470052691B /* AppDelegate.m */,
+				A481C7C020FD7E470052691B /* LaunchScreen.storyboard */,
+				A481C7C220FD7E470052691B /* Info.plist */,
+				A481C7C320FD7E470052691B /* main.m */,
+				A481C7C420FD7E470052691B /* ViewController.h */,
+				A481C7C520FD7E470052691B /* ViewController.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		A481C7CB20FD7F030052691B /* DDYNetworkSpeedTool */ = {
+			isa = PBXGroup;
+			children = (
+				A481C7CC20FD7F530052691B /* DDYNetworkSpeedTool.h */,
+				A481C7CD20FD7F530052691B /* DDYNetworkSpeedTool.m */,
+			);
+			path = DDYNetworkSpeedTool;
+			sourceTree = "<group>";
+		};
+		A481C7DE20FDA66B0052691B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A481C7A620FD7E060052691B /* DDYNetworkSpeedTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A481C7BA20FD7E130052691B /* Build configuration list for PBXNativeTarget "DDYNetworkSpeedTool" */;
+			buildPhases = (
+				A481C7A320FD7E060052691B /* Sources */,
+				A481C7A420FD7E060052691B /* Frameworks */,
+				A481C7A520FD7E060052691B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDYNetworkSpeedTool;
+			productName = DDYNetworkSpeedTool;
+			productReference = A481C7A720FD7E060052691B /* DDYNetworkSpeedTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A481C79F20FD7E060052691B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = com.smartmesh;
+				TargetAttributes = {
+					A481C7A620FD7E060052691B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = A481C7A220FD7E060052691B /* Build configuration list for PBXProject "DDYNetworkSpeedTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A481C79E20FD7E060052691B;
+			productRefGroup = A481C7A820FD7E060052691B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A481C7A620FD7E060052691B /* DDYNetworkSpeedTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A481C7A520FD7E060052691B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A481C7C820FD7E470052691B /* Info.plist in Resources */,
+				A481C7C720FD7E470052691B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A481C7A320FD7E060052691B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A481C7CA20FD7E470052691B /* ViewController.m in Sources */,
+				A481C7C920FD7E470052691B /* main.m in Sources */,
+				A481C7CE20FD7F530052691B /* DDYNetworkSpeedTool.m in Sources */,
+				A481C7C620FD7E470052691B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A481C7C020FD7E470052691B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A481C7C120FD7E470052691B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A481C7B820FD7E130052691B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A481C7B920FD7E130052691B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A481C7BB20FD7E130052691B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23JJ7VRKJT;
+				INFOPLIST_FILE = "$(SRCROOT)/DDYNetworkSpeedTool/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DDYNetworkSpeedTool/DDYNetworkSpeedTool",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartmesh.smart2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A481C7BC20FD7E130052691B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23JJ7VRKJT;
+				INFOPLIST_FILE = "$(SRCROOT)/DDYNetworkSpeedTool/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DDYNetworkSpeedTool/DDYNetworkSpeedTool",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartmesh.smart2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A481C7A220FD7E060052691B /* Build configuration list for PBXProject "DDYNetworkSpeedTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A481C7B820FD7E130052691B /* Debug */,
+				A481C7B920FD7E130052691B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A481C7BA20FD7E130052691B /* Build configuration list for PBXNativeTarget "DDYNetworkSpeedTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A481C7BB20FD7E130052691B /* Debug */,
+				A481C7BC20FD7E130052691B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A481C79F20FD7E060052691B /* Project object */;
+}
