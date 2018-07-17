@@ -17,7 +17,9 @@
 
 @property (nonatomic, strong) UIButton *measureButton;
 
-@property (nonatomic, strong) UILabel *speedLabel;
+@property (nonatomic, strong) UILabel *measureSpeedLabel;
+
+@property (nonatomic, strong) UILabel *instantSpeedLabel;
 
 @property (nonatomic, strong) DDYNetworkSpeedTool *netTool;
 
@@ -33,22 +35,33 @@
         [_measureButton.titleLabel setFont:[UIFont systemFontOfSize:20]];
         [_measureButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         [_measureButton setBackgroundColor:[UIColor lightGrayColor]];
-        [_measureButton setFrame:CGRectMake(10, DDYTopH+50, DDYScreenW-20, 30)];
+        [_measureButton setFrame:CGRectMake(10, DDYTopH+90, DDYScreenW-20, 30)];
         [_measureButton addTarget:self action:@selector(handleBtn) forControlEvents:UIControlEventTouchUpInside];
         
     }
     return _measureButton;
 }
 
-- (UILabel *)speedLabel {
-    if (!_speedLabel) {
-        _speedLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, DDYTopH+10, DDYScreenW-20, 30)];
-        [_speedLabel setFont:[UIFont systemFontOfSize:18]];
-        [_speedLabel setTextColor:[UIColor greenColor]];
-        [_speedLabel setBackgroundColor:[UIColor lightGrayColor]];
-        [_speedLabel setTextAlignment:NSTextAlignmentCenter];
+- (UILabel *)measureSpeedLabel {
+    if (!_measureSpeedLabel) {
+        _measureSpeedLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, DDYTopH+10, DDYScreenW-20, 30)];
+        [_measureSpeedLabel setFont:[UIFont systemFontOfSize:18]];
+        [_measureSpeedLabel setTextColor:[UIColor greenColor]];
+        [_measureSpeedLabel setBackgroundColor:[UIColor lightGrayColor]];
+        [_measureSpeedLabel setTextAlignment:NSTextAlignmentCenter];
     }
-    return _speedLabel;
+    return _measureSpeedLabel;
+}
+
+- (UILabel *)instantSpeedLabel {
+    if (!_instantSpeedLabel) {
+        _instantSpeedLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, DDYTopH+50, DDYScreenW-20, 30)];
+        [_instantSpeedLabel setFont:[UIFont systemFontOfSize:18]];
+        [_instantSpeedLabel setTextColor:[UIColor greenColor]];
+        [_instantSpeedLabel setBackgroundColor:[UIColor lightGrayColor]];
+        [_instantSpeedLabel setTextAlignment:NSTextAlignmentCenter];
+    }
+    return _instantSpeedLabel;
 }
 
 - (DDYNetworkSpeedTool *)netTool {
@@ -61,19 +74,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.measureButton];
-    [self.view addSubview:self.speedLabel];
+    [self.view addSubview:self.measureSpeedLabel];
+    [self.view addSubview:self.instantSpeedLabel];
     __weak __typeof (self)weakSelf = self;
     [self.netTool setMeasureBlock:^(NSError *error, BOOL finish, float speed) {
         __strong __typeof (weakSelf)strongSelf = weakSelf;
         if (error) {
-            strongSelf.speedLabel.text = [NSString stringWithFormat:@"%@", error.description];
+            strongSelf.measureSpeedLabel.text = [NSString stringWithFormat:@"%@", error.description];
             strongSelf.measureButton.selected = NO;
         } else if (!finish){
-            strongSelf.speedLabel.text = [NSString stringWithFormat:@"speed:%@/s",[strongSelf formatSpeed:speed]];
+            strongSelf.measureSpeedLabel.text = [NSString stringWithFormat:@"speed:%@/s",[strongSelf formatSpeed:speed]];
         } else {
-            strongSelf.speedLabel.text = [NSString stringWithFormat:@"avarage:%@/s   bandwidth:%@",[strongSelf formatSpeed:speed], [strongSelf formatBandWidth:speed]];
+            strongSelf.measureSpeedLabel.text = [NSString stringWithFormat:@"avarage:%@/s   bandwidth:%@",[strongSelf formatSpeed:speed], [strongSelf formatBandWidth:speed]];
             strongSelf.measureButton.selected = NO;
         }
+    }];
+    
+    self.netTool.isMoniteInstantSpeed = YES;
+    [self.netTool setInstantBlock:^(float upSpeed, float downSpeed) {
+        __strong __typeof (weakSelf)strongSelf = weakSelf;
+        strongSelf.instantSpeedLabel.text = [NSString stringWithFormat:@"up:%@  down:%@", [strongSelf formatSpeed:upSpeed], [strongSelf formatSpeed:downSpeed]];
     }];
 }
 
@@ -91,9 +111,9 @@
 
 - (void)handleBtn {
     if ((_measureButton.selected = !_measureButton.selected)) {
-        [self.netTool startMeasureSpeed];
+        [self.netTool ddy_StartMeasureSpeed];
     } else {
-        [self.netTool stopMeasureSpeed];
+        [self.netTool ddy_StopMeasureSpeed];
     }
 }
 
